@@ -1,0 +1,11 @@
+$font-principal: "philosopher-bold";
+$font-secundaria: "Mulish-regular";
+
+@font-face{
+    font-family: $font-principal;
+    src: url('../Assets/Fonts/Philosopher-Bold.ttf');
+}
+@font-face{
+    font-family: $font-secundaria;
+    src: url('../Assets/Fonts/Mulish-Regular.ttf')
+}
