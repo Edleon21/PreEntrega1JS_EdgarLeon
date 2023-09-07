@@ -2,12 +2,12 @@
 (npm install -g sass)
 (sass --watch scss/estilos.scss css/estilos.css)*/
 @font-face {
-  font-family: "philosopher-bold";
-  src: url("../Assets/Fonts/Philosopher-Bold.ttf");
+  font-family: "Philosopher-bold";
+  src: url("../assets/fonts/Philosopher-Bold.ttf");
 }
 @font-face {
   font-family: "Mulish-regular";
-  src: url("../Assets/Fonts/Mulish-Regular.ttf");
+  src: url("../assets/fonts/Mulish-Regular.ttf");
 }
 /*Variables*/
 /*Condicionales IF*/
@@ -19,7 +19,7 @@
 
 /***********************************************/
 .imagen-fondo {
-  background-image: url(../Assets/Imagenes/home.png);
+  background-image: url(../assets/imagenes/home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@
 }
 
 .imagen-fondo2 {
-  background-image: url(../Assets/Imagenes/Nosotros.png);
+  background-image: url(../assets/imagenes/Nosotros.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .imagen-fondo3 {
-  background-image: url(../Assets/Imagenes/Publicaciones.png);
+  background-image: url(../assets/imagenes/Publicaciones.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 .imagen-fondo4 {
-  background-image: url(../Assets/Imagenes/Nosotros3.jpg);
+  background-image: url(../assets/imagenes/Nosotros3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@
 }
 
 .imagen-fondo5 {
-  background-image: url(../Assets/Imagenes/Contacto.png);
+  background-image: url(../assets/imagenes/Contacto.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +150,7 @@ ul li a::after {
 /*Mixins*/
 /*****************************************/
 .font-main {
-  font-family: "philosopher-bold";
+  font-family: "Philosopher-bold";
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 65px;
@@ -468,7 +468,7 @@ button:hover::before {
 }
 
 .font-main02 {
-  font-family: "philosopher-bold";
+  font-family: "Philosopher-bold";
   color: #fff;
   font-size: 24px;
   font-style: normal;
@@ -545,6 +545,7 @@ button:hover::before {
     git remote add origin https:
     git branch -M main
     git push -u origin main
+    ///nuevo repo remoto///
     git remote remove origin (elimina la conexion)
     git remote set-url origin newHTTP/SSH (cambia la url del rep remoto)
     git remote -v (ver lista de
@@ -554,19 +555,25 @@ button:hover::before {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
+/*@media (min-width: 768px) and (max-width: 1024px) {}*/
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
+/*@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}*/
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+/*@media (min-width: 481px) and (max-width: 767px) {}*/
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   nav {
     z-index: 1;
     padding: 0% 7%;
@@ -611,7 +618,6 @@ button:hover::before {
     font-weight: 500;
   }
   .imagen-fondo {
-    background-image: url(../Assets/Imagenes/home.png);
     background-position: 80%;
     background-repeat: no-repeat;
     background-size: cover;

@@ -19,23 +19,23 @@
     background-attachment: $attachment;
 }
 .imagen-fondo{
-    background-image: url(../Assets/Imagenes/home.png);
+    background-image: url(../assets/imagenes/home.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo2{
-    background-image: url(../Assets/Imagenes/Nosotros.png);
+    background-image: url(../assets/imagenes/Nosotros.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo3{
-    background-image: url(../Assets/Imagenes/Publicaciones.png);
+    background-image: url(../assets/imagenes/Publicaciones.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo4{
-    background-image: url(../Assets/Imagenes/Nosotros3.jpg);
+    background-image: url(../assets/imagenes/Nosotros3.jpg);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo5{
-    background-image: url(../Assets/Imagenes/Contacto.png);
+    background-image: url(../assets/imagenes/Contacto.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 /*********************************************/
@@ -469,22 +469,28 @@ button {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) {}
+/*@media (min-width: 768px) and (max-width: 1024px) {}*/
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+/*@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}*/
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 481px) and (max-width: 767px) {}
+/*@media (min-width: 481px) and (max-width: 767px) {}*/
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
+/////////////////////////////////////////
 @media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     nav {
         z-index: 1;
         padding: 0% 7%;
@@ -536,7 +542,6 @@ button {
     }
     ////pagina home
     .imagen-fondo{
-        background-image: url(../Assets/Imagenes/home.png);
         @include background-paginas(80%,no-repeat,cover,fixed)
     }
     .font-main{
@@ -553,7 +558,7 @@ button {
         display: inline;
         @include texto-descripciones(16px,normal,400,0.48px)
     }
-    button{;
+    button{
         @include texto-descripciones(16px,normal,700,0px)
     }
     .flex-conteiner{
