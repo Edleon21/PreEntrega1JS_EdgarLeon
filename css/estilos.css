@@ -16,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /***********************************************/
 .imagen-fondo {
   background-image: url(../assets/imagenes/home.png);
@@ -24,6 +25,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .imagen-fondo2 {
   background-image: url(../assets/imagenes/Nosotros.png);
   background-position: center;
@@ -31,6 +33,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .imagen-fondo3 {
   background-image: url(../assets/imagenes/Publicaciones.png);
   background-position: center;
@@ -38,6 +41,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .imagen-fondo4 {
   background-image: url(../assets/imagenes/Nosotros3.jpg);
   background-position: center;
@@ -45,6 +49,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .imagen-fondo5 {
   background-image: url(../assets/imagenes/Contacto.png);
   background-position: center;
@@ -52,6 +57,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 .imagen-fondo6 {
   background-image: url(../assets/imagenes/login6.jpg);
   background-position: center;
@@ -59,6 +65,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 /*********************************************/
 /*Clases para navbar y menu hamburguesa tuky*/
 .logo-home {
@@ -84,10 +91,7 @@ nav img {
   width: 148px;
   height: 50px;
 }
-.img-login {
-  width: 39px;
-  height: 39px;
-}
+
 nav label img {
   width: 35px;
   height: 35px;
@@ -97,14 +101,17 @@ nav input, nav label {
   display: none;
 }
 
+.img-login {
+  width: 39px;
+  height: 39px;
+}
+
 nav ul {
   display: flex;
   list-style: none;
   width: 20%;
-
 }
 nav ul li a {
-
   text-decoration: none;
   font-size: 18px;
   font-style: normal;
@@ -319,6 +326,44 @@ button:hover::before {
   background: #0077B5;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 20%;
+}
+
+.contenedor-login {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 2% 3%;
+  gap: 10px;
+  width: 30%;
+  color: #fff;
+  background: rgba(33, 33, 33, 0.47);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5.5px);
+  border-radius: 8px;
+}
+
+.modal {
+  display: none;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  font-family: "Philosopher-bold";
+}
+
 .flex-conteiner2 {
   display: flex;
   flex-direction: column;
@@ -453,26 +498,7 @@ button:hover::before {
   font-weight: 400;
   letter-spacing: 0.8;
 }
-.login{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 20%;
-}
-.contenedor-login {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr ;
-  padding: 2% 3%;
-  gap: 10px;
-  width: 30%;
-  color: #fff;
 
-  background: rgba(33, 33, 33, 0.47);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(5.5px);
-  border-radius: 8px;
-}
 .contenedor-form {
   background: rgba(33, 33, 33, 0.47);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

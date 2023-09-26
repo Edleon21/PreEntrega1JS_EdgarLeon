@@ -38,6 +38,13 @@
     background-image: url(../assets/imagenes/Contacto.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
+.imagen-fondo6 {
+    background-image: url(../assets/imagenes/login6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 /*********************************************/
 /*Clases para navbar y menu hamburguesa tuky*/
 .logo-home{
@@ -70,11 +77,15 @@ nav label img{
 nav input, nav label {
     display: none;
 }
-
+.img-login {
+    width: 39px;
+    height: 39px;
+  }
 nav {
     ul {
         display: flex;
         list-style: none;
+        width: 20%;
         li{
             a{
                 text-decoration: none;
@@ -283,6 +294,43 @@ button {
   }
 
 ////////////
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 20%;
+  }
+  .contenedor-login {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    padding: 2% 3%;
+    gap: 10px;
+    width: 30%;
+    color: #fff;
+  
+    background: rgba(33, 33, 33, 0.47);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5.5px);
+    border-radius: 8px;
+  }
+.modal {
+    display: none;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.25rem;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 30%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    font-family: $font-principal;
+}
+
 .flex-conteiner2 {
     display: flex;
     flex-direction: column;
