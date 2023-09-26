@@ -1,4 +1,5 @@
-/* PrimerEntrega Clase JS funcion + if para mi login de mi trabajo final de curso de desarrollo web */
+/* PrimerEntrega Clase JS funcion + Crear un algoritmo con un condicional aplicado a
+ mi login de mi trabajo final de curso de desarrollo web */
 
 
 
@@ -27,3 +28,4 @@ function prueba2(){
     document.getElementById("modal").style.display= "none"
     location.href = "../index.html"
 }
+
